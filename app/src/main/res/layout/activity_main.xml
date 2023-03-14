@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <id.ss564.lib.slidingbutton.SlidingButton
+        android:id="@+id/slidingButton"
+        style="@style/SlidingButton.RoundedTrackabale"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sliding_shape_background"
+        app:layout_constraintBottom_toTopOf="@id/slidingButton1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:sliding_button_marginBottom="4dp"
+        app:sliding_button_marginEnd="4dp"
+        app:sliding_button_marginStart="4dp"
+        app:sliding_button_marginTop="4dp" />
+
+    <id.ss564.lib.slidingbutton.SlidingButton
+        android:id="@+id/slidingButton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sliding_rect_background"
+        app:layout_constraintBottom_toTopOf="@id/slidingButton2"
+        app:layout_constraintTop_toBottomOf="@id/slidingButton"
+        app:sliding_button_background="@drawable/oval_morp_shadow"
+        app:sliding_button_height="84dp"
+        app:sliding_button_icon="@drawable/ic_favorite"
+        app:sliding_button_icon_tint="@drawable/sliding_icon_tint"
+        app:sliding_button_width="84dp"
+        app:sliding_icon_scaleType="centerInside"
+        app:sliding_text="@string/love_it"
+        app:sliding_text_color="#535353"
+        app:sliding_text_textStyle="bold" />
+
+    <id.ss564.lib.slidingbutton.SlidingButton
+        android:id="@+id/slidingButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sliding_rect_background_2"
+        app:layout_constraintBottom_toTopOf="@id/slidingButton3"
+        app:layout_constraintTop_toBottomOf="@id/slidingButton1"
+        app:sliding_button_background="@drawable/sliding_button_oval_background_2"
+        app:sliding_button_height="48dp"
+        app:sliding_button_icon="@drawable/sliding_icon_example_2"
+        app:sliding_button_icon_tint="@android:color/white"
+        app:sliding_button_marginBottom="4dp"
+        app:sliding_button_marginEnd="4dp"
+        app:sliding_button_marginStart="4dp"
+        app:sliding_button_marginTop="4dp"
+        app:sliding_button_width="48dp"
+        app:sliding_icon_scaleType="centerInside"
+        app:sliding_text="UNLOCK"
+        app:sliding_showTrack="true"
+        app:sliding_corner_radius="24dp"
+        app:sliding_trackBackgroundTint="@drawable/sliding_track_tint_example_3"
+        app:sliding_text_color="@android:color/white"
+        app:sliding_text_fontFamily="sans-serif-condensed-medium" />
+
+    <id.ss564.lib.slidingbutton.SlidingButton
+        android:id="@+id/slidingButton3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/sliding_rect_background_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/slidingButton2"
+        app:sliding_button_background="@drawable/sliding_button_oval_background_3"
+        app:sliding_button_height="84dp"
+        app:sliding_button_icon="@drawable/sliding_icon_example_3"
+        app:sliding_button_icon_tint="@android:color/black"
+        app:sliding_button_width="84dp"
+        app:sliding_icon_scaleType="centerInside"
+        app:sliding_text="@null" />
+
+<!--    <com.chinalwb.slidetoconfirmlib.SlideToConfirm-->
+<!--        android:id="@+id/slide_to_confirm_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_margin="20dp"-->
+<!--        app:border_radius="2dp"-->
+<!--        app:border_width="1dp"-->
+<!--        app:slider_background_color="@color/pact_purple"-->
+<!--        app:slider_color="@color/colorAccent"-->
+<!--        app:slider_lottie="lottie_x.json"-->
+<!--        app:slider_image="@drawable/ic_arrow_forward_black_60dp"-->
+<!--        app:slider_width="60dp"-->
+<!--        app:slider_reset_duration="300"-->
+<!--        app:slider_vibration_duration="50"-->
+<!--        app:slider_threshold="1dp"-->
+<!--        app:engage_text="Your action text"-->
+<!--        app:engage_text_size="17sp"-->
+<!--        app:engage_text_color="@android:color/white"-->
+<!--        app:engaged_text_font="@font/pro_solid"-->
+<!--        app:completed_text="Unlocked!"-->
+<!--        app:completed_text_color="@android:color/white"-->
+<!--        app:completed_text_size="30sp"-->
+
+<!--        tools:context=".MainActivity" >-->
+<!--    </com.chinalwb.slidetoconfirmlib.SlideToConfirm>-->
+
+<!--    <View-->
+<!--        android:id="@+id/separator_1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/slide_to_confirm_1"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:background="@color/colorAccent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sample_2_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/separator_1"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:textSize="18sp"-->
+<!--        android:fontFamily="@font/pro_solid"-->
+<!--        android:text="Sample 2: Two Steps Usage"-->
+<!--        />-->
+<!--    <com.chinalwb.slidetoconfirmlib.SlideToConfirm-->
+<!--        android:id="@+id/slide_to_confirm_2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="60dp"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/sample_2_text"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_margin="20dp"-->
+<!--        app:border_radius="2dp"-->
+<!--        app:border_width="1dp"-->
+<!--        app:slider_background_color="@color/pact_purple"-->
+<!--        app:slider_color="@color/colorAccent"-->
+<!--        app:slider_lottie="lottie_x.json"-->
+<!--        app:slider_image="@drawable/ic_arrow_forward_black_60dp"-->
+<!--        app:slider_width="60dp"-->
+<!--        app:slider_reset_duration="300"-->
+<!--        app:slider_vibration_duration="50"-->
+<!--        app:slider_threshold="1dp"-->
+<!--        app:engage_text="Your action text"-->
+<!--        app:engage_text_size="17sp"-->
+<!--        app:engage_text_color="@android:color/white"-->
+<!--        app:engaged_text_font="@font/pro_solid"-->
+<!--        app:completed_text="Unlocked!"-->
+<!--        app:completed_text_color="@android:color/white"-->
+<!--        app:completed_text_size="30sp"-->
+
+<!--        tools:context=".MainActivity" >-->
+<!--    </com.chinalwb.slidetoconfirmlib.SlideToConfirm>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
